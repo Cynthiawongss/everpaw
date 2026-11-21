@@ -62,7 +62,6 @@ The three rooms (a window seat, an attic and a glasshouse) were modelled for thi
 | Saved in this browser only | No account or cloud sync. Use **Download everything** before clearing site data or changing devices. |
 | A photo sets colours, not a model | The pet is a stylised 3D animal in your pet's colours, not a model generated from the photo. The photo stays on your device. |
 | Test checkout | Prices from $0.99 to $5.99 are shown, but no payment provider is connected and nothing is charged. |
-| Page views on the published site | The home itself keeps no record of your visits, but the published site loads Umami, which counts page views. |
 
 ## Run it locally
 
