@@ -1,0 +1,66 @@
+{
+  "defaults": {
+    "size": "1440x1000",
+    "scale": 2,
+    "lang": "en-US",
+    "timeout": 60000,
+    "still": false
+  },
+  "shots": [
+    {
+      "url": "http://127.0.0.1:8011/?light=day",
+      "out": "panel-day.jpg",
+      "setup": "localStorage.setItem('everpaw.home.v3', \"{\\\"v\\\": 3, \\\"purpose\\\": \\\"memory\\\", \\\"room\\\": \\\"bay\\\", \\\"opened\\\": 1795271724071, \\\"pet\\\": {\\\"name\\\": \\\"Mochi\\\", \\\"years\\\": \\\"2011 \\\\u2013 2026\\\", \\\"species\\\": \\\"cat\\\", \\\"look\\\": {\\\"base\\\": \\\"#E3A35F\\\", \\\"second\\\": \\\"#FBEEDB\\\", \\\"dark\\\": \\\"#B9772F\\\", \\\"pattern\\\": \\\"stripes\\\"}, \\\"scale\\\": 1, \\\"photo\\\": null, \\\"words\\\": \\\"She took the window seat every afternoon and pretended she wasn't waiting for me.\\\"}, \\\"rooms\\\": {}, \\\"owned\\\": [], \\\"fedAt\\\": 0, \\\"journal\\\": [{\\\"t\\\": 1795271724071, \\\"kind\\\": \\\"opened\\\", \\\"room\\\": \\\"bay\\\"}]}\"); localStorage.setItem('everpaw.lang','en');",
+      "steps": [
+        {
+          "wait": 3000
+        },
+        {
+          "click": "[data-act=water]"
+        },
+        {
+          "wait": 5000
+        }
+      ],
+      "log": "document.querySelector('.who')?.textContent.trim().replace(/\\s+/g, ' ')",
+      "hide": ".hud-top, .hud-bottom, .toast, #toast"
+    },
+    {
+      "url": "http://127.0.0.1:8011/?light=evening",
+      "out": "panel-evening.jpg",
+      "setup": "localStorage.setItem('everpaw.home.v3', \"{\\\"v\\\": 3, \\\"purpose\\\": \\\"memory\\\", \\\"room\\\": \\\"bay\\\", \\\"opened\\\": 1795271724071, \\\"pet\\\": {\\\"name\\\": \\\"Mochi\\\", \\\"years\\\": \\\"2011 \\\\u2013 2026\\\", \\\"species\\\": \\\"cat\\\", \\\"look\\\": {\\\"base\\\": \\\"#E3A35F\\\", \\\"second\\\": \\\"#FBEEDB\\\", \\\"dark\\\": \\\"#B9772F\\\", \\\"pattern\\\": \\\"stripes\\\"}, \\\"scale\\\": 1, \\\"photo\\\": null, \\\"words\\\": \\\"She took the window seat every afternoon and pretended she wasn't waiting for me.\\\"}, \\\"rooms\\\": {}, \\\"owned\\\": [], \\\"fedAt\\\": 0, \\\"journal\\\": [{\\\"t\\\": 1795271724071, \\\"kind\\\": \\\"opened\\\", \\\"room\\\": \\\"bay\\\"}]}\"); localStorage.setItem('everpaw.lang','en');",
+      "steps": [
+        {
+          "wait": 3000
+        },
+        {
+          "click": "[data-act=feed]"
+        },
+        {
+          "wait": 5500
+        }
+      ],
+      "log": "document.querySelector('.who')?.textContent.trim().replace(/\\s+/g, ' ')",
+      "hide": ".hud-top, .hud-bottom, .toast, #toast"
+    },
+    {
+      "url": "http://127.0.0.1:8011/?light=night",
+      "out": "panel-night.jpg",
+      "setup": "localStorage.setItem('everpaw.home.v3', \"{\\\"v\\\": 3, \\\"purpose\\\": \\\"memory\\\", \\\"room\\\": \\\"bay\\\", \\\"opened\\\": 1795271724071, \\\"pet\\\": {\\\"name\\\": \\\"Mochi\\\", \\\"years\\\": \\\"2011 \\\\u2013 2026\\\", \\\"species\\\": \\\"cat\\\", \\\"look\\\": {\\\"base\\\": \\\"#E3A35F\\\", \\\"second\\\": \\\"#FBEEDB\\\", \\\"dark\\\": \\\"#B9772F\\\", \\\"pattern\\\": \\\"stripes\\\"}, \\\"scale\\\": 1, \\\"photo\\\": null, \\\"words\\\": \\\"She took the window seat every afternoon and pretended she wasn't waiting for me.\\\"}, \\\"rooms\\\": {}, \\\"owned\\\": [], \\\"fedAt\\\": 0, \\\"journal\\\": [{\\\"t\\\": 1795271724071, \\\"kind\\\": \\\"opened\\\", \\\"room\\\": \\\"bay\\\"}]}\"); localStorage.setItem('everpaw.lang','en');",
+      "steps": [
+        {
+          "wait": 3000
+        },
+        {
+          "until": "document.querySelector('.who')?.textContent.includes('asleep')",
+          "timeout": 120000
+        },
+        {
+          "wait": 2500
+        }
+      ],
+      "log": "document.querySelector('.who')?.textContent.trim().replace(/\\s+/g, ' ')",
+      "hide": ".hud-top, .hud-bottom, .toast, #toast"
+    }
+  ]
+}
